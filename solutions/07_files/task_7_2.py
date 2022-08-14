@@ -7,4 +7,4 @@ with open(conf_file,'r') as f:
         if line.startswith('!'):
             pass
         else:
-            print(line.strip())
+            print(line.strip('\n'))
