@@ -28,4 +28,7 @@ access_config_2 = {
     "FastEthernet0/09": 107,
 }
 
-
+cfg1=generate_access_config(access_config,access_mode_template)
+print(cfg1)
+cfg2=generate_access_config(access_config_2,access_mode_template)
+print(cfg2)
