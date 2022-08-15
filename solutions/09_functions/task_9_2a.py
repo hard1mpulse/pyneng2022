@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def generate_access_config(intf_vlan_mapping, trunk_template):
+def generate_trunk_config(intf_vlan_mapping, trunk_template):
   result={}
   for intf in intf_vlan_mapping.keys():
     vlans_str_list=[]
@@ -34,7 +34,7 @@ trunk_config_2 = {
     "FastEthernet0/14": [117],
 }
 
-t1=generate_access_config(trunk_config,trunk_mode_template)
-t2=generate_access_config(trunk_config_2,trunk_mode_template)
+t1=generate_trunk_config(trunk_config,trunk_mode_template)
+t2=generate_trunk_config(trunk_config_2,trunk_mode_template)
 print(t1)
 print(t2)
