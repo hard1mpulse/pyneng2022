@@ -21,7 +21,7 @@ def convert_config_to_dict(config_filename):
     with open(config_filename,'r') as f:
         l1cmd=''
         for line in f:
-            if line.startswith('!') or ignore_command(line,ignore) or line=='\n' or line=='end\n':
+            if line.startswith('!') or ignore_command(line,ignore) or line=='\n':
                 pass
             elif not line.startswith(' '):
                 result.update({line.strip(): []})
