@@ -15,5 +15,5 @@ infiles = [
     "sh_cdp_n_r3.txt",
 ]
 
-
-print(create_network_map(infiles))
+if __name__ == "__main__":
+    print(create_network_map(infiles))
