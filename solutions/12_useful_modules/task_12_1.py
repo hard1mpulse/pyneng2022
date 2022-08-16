@@ -30,6 +30,6 @@ def ping_ip_addresses(ip_list):
             unavail_ip.append(ip)
     return (avail_ip,unavail_ip)
 
-ip_addr=['192.168.0.1','8.8.8.8','172.16.200.1']
-
-print(ping_ip_addresses(ip_addr))
+if __name__ == "__main__":
+    ip_addr=['192.168.0.1','8.8.8.8','172.16.200.1']
+    print(ping_ip_addresses(ip_addr))
